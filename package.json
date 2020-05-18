@@ -1,0 +1,20 @@
+{
+  "name": "rpp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "dependencies": {
+    "electron": "^8.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sardonyx78/Runes-plus-plus.git"
+  },
+  "author": "Sardonyx",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/Sardonyx78/Runes-plus-plus/issues"
+  },
+  "homepage": "https://github.com/Sardonyx78/Runes-plus-plus#readme"
+}

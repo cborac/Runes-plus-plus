@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "es2019",
+        "lib": [
+            "esnext",
+            "esnext.array",
+            "esnext.asynciterable",
+            "esnext.intl",
+            "esnext.symbol",
+            "dom"
+        ],
+        "strict": true,
+        "moduleResolution": "node",
+        "declaration": false,
+        "removeComments": false,
+        "alwaysStrict": true,
+        "pretty": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "incremental": true,
+        "noEmitHelpers": true,
+        "importHelpers": true,
+        "skipLibCheck": true,
+        "strictNullChecks": false,
+        "esModuleInterop": true
+    },
+    "include": [
+        "*"
+    ]
+}
