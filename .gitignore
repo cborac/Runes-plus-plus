@@ -1,3 +1,7 @@
 node_modules
 .DS_STORE
 dist
+out
+installers
+
+Runes++-win32-x64

@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Runes++</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="friz/style.css">
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="summonerinfo">
-        <h1 id="summonerName">Summoner Name</h1>
-        <img>
+    <div class="main">
+        <audio preload="auto" src="./assets/sounds/import.wav" id="import"></audio>
+        <audio preload="auto" src="./assets/sounds/delete.wav" id="delete"></audio>
+        <audio preload="auto" src="./assets/sounds/export.wav" id="export"></audio>
+        <div class="movebox"></div>
+        <div class="titlebar">
+            <div class="movebox"></div>
+            <img id="pfp" onclick="exportRune()">
+            <h1 id="summonerName"></h1>
+        </div>
+        <div class="pageselect">
+            <img class="button" src="./assets/img/plus.png" onclick="addNewRune()">
+            <div class="titlespace"></div>
+            <select id="select" onchange="change()"></select>
+            <div class="titlespace"></div>
+            <img class="button" src="./assets/img/trash.png" onclick="deleteRune()">
+        </div>
+        <div class="lower">
+            <div class="grid-container">
+                <img id="keyRune">
+                <img class="rune" id="rune1">
+                <img class="rune" id="rune2">
+                <img class="rune" id="rune3">
+            </div>
+            <div class="grid-container">
+                <img class="altrune" id="arune1">
+                <img class="altrune" id="arune2">
+            </div>
+            <div class="grid-container">
+                <img class="littlerune" id="lrune1">
+                <img class="littlerune" id="lrune2">
+                <img class="littlerune" id="lrune3">
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

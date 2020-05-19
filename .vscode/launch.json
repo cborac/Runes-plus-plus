@@ -14,7 +14,10 @@
         "preLaunchTask": "tsc: build - tsconfig.json",
         "args" : ["."],
         "outputCapture": "std",
-        "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+        "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+        "env": {
+
+        }
       }
     ]
   }

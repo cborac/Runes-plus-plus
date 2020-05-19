@@ -1,20 +1,41 @@
 {
   "name": "rpp",
+  "productName": "Runes++",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.ts",
-  "dependencies": {
-    "electron": "^8.3.0"
+  "description": "Rune editor tool for league",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && node postcompile.js & electron-packager . && node wininstaller.js",
+    "pack": "electron-packager . && node postpack.js",
+    "compile": "tsc && node postcompile.js",
+    "electron": "electron .",
+    "wininstaller": "node wininstaller.js"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "tslib": "^2.0.0"
+  },
+  "devDependencies": {
+    "rcedit": "^2.2.0",
+    "electron": "^8.3.0",
+    "electron-builder": "^22.6.1",
+    "electron-packager": "^14.2.1",
+    "electron-winstaller": "^4.0.0",
+    "typescript": "^3.9.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sardonyx78/Runes-plus-plus.git"
   },
   "author": "Sardonyx",
-  "license": "GNU",
+  "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/Sardonyx78/Runes-plus-plus/issues"
   },
-  "homepage": "https://github.com/Sardonyx78/Runes-plus-plus#readme"
+  "homepage": "https://github.com/Sardonyx78/Runes-plus-plus#readme",
+  "keywords": [
+    "LoL",
+    "League of Legends",
+    "Riot"
+  ]
 }

@@ -1,7 +1,162 @@
-body {
-    background-color: rgb(49, 23, 44);
+body, .main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } 
+
+body {
+    background: rgb(88,35,78);
+    background: radial-gradient(circle, rgba(88,35,78,1) 40%, rgba(49,23,44,1) 100%);
+    background-repeat: no-repeat;
+    background-size: 400px 600px;
+    margin: 0 auto;
+}
+
 h1 {
-    font-family: 'Open Sans', sans-serif;
-    color: #cfb664;
+    font-family: 'Friz Quadrata Regular OS';
+    background-color: #cfb664;
+    background-size: 100%;
+    background-repeat: repeat;
+    background-image: linear-gradient(180deg, #cfb664 0%, #8d7c43 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.pageselect {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+select {
+    cursor: pointer;
+    position: relative;
+    width: 50%;
+    height: 40px;
+    background-color: #222222;
+    color: aliceblue;
+    outline: none;
+    text-align: center;
+}
+
+.titlespace {
+    width: 10%;
+}
+
+.titlebar {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.lower {
+    display: flex;
+    flex-direction: row;
+    height: 278px;
+    width: 100%;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33%;
+    margin-top: 10px;
+}
+
+#keyRune {
+    position: relative;
+    width: 86px;
+    height: 86px;
+    background-image: url("./assets/img/runeholder.png");
+    background-position: center;
+    background-size: 64px 64px;
+    background-repeat: no-repeat;
+}
+
+.littlerune {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-image: url("./assets/img/runeholder.png");
+    background-position: center;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+
+.altrune {
+    position: relative;
+    width: 48px;
+    height: 48px; 
+    border-radius: 50%;
+    border: #cfb664 solid 2px;
+    margin-bottom: 6px;
+}
+
+.rune {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: #cfb664 solid 2px;
+    margin-bottom: 6px;
+}
+
+
+#summonerName {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+#pfp {
+    margin-bottom: 0px auto;
+    height: 64px;
+    border-radius: 50%;
+    width: 64px;
+    border: 2px solid #cfb664;
+    cursor: pointer;
+    transition: opacity 2s;
+}
+
+#pfp:hover {
+    content: url('./assets/img/tick.png');
+    opacity: 100%;
+}
+
+
+.button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: transform 1s;
+}
+
+.button:hover {
+    transform: scale(1.1)
+}
+
+.movebox {
+    height: 20px;
+    width: 100%;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: local("./font");
 }
