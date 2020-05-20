@@ -26,7 +26,7 @@ async function fetch(url: string): Promise<any> {
     })
 }
 
-const currentVer = "v1.0.0"
+const currentVer = "v1.0.1"
 
 
 let authInf: auth = null

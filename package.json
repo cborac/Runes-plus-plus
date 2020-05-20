@@ -1,7 +1,7 @@
 {
   "name": "rpp",
   "productName": "Runes++",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rune editor tool for league",
   "main": "dist/index.js",
   "scripts": {
