@@ -168,7 +168,7 @@ app.on("ready", async () => {
         width: 400,
         height: 600,
         fullscreenable: false,
-        frame: (process.platform !== "win32"),
+        frame: /*(process.platform !== "win32")*/ true,
         icon: "logo/Icon.ico",
         resizable: false,
         title: "Runes++",
@@ -190,7 +190,7 @@ app.on("ready", async () => {
 
         if (file.ignoreUpdate) return
 
-        if (r.name !== currentVer) dialog.showMessageBox(win, {
+        if (r.tag_name !== currentVer) dialog.showMessageBox(win, {
             type: 'warning',
             buttons: ['Yes', 'No'],
             defaultId: 2,
