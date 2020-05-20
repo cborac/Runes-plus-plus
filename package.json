@@ -11,6 +11,32 @@
     "electron": "electron .",
     "wininstaller": "node wininstaller.js"
   },
+  "build": {
+    "appId": "com.electron.${name}",
+    "productName": "Runes++",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "logo/Icon.ico",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "Sardonyx78",
+          "token": "${{ secrets.TOKEN }}"
+        }
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "logo/Icon.ico",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "Sardonyx78",
+          "token": "${{ secrets.TOKEN }}"
+        }
+      ]
+    }
+  },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "tslib": "^2.0.0"
