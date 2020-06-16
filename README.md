@@ -22,13 +22,13 @@ Just open your rune, make your rune and give it a name. Press (+) button on the 
 # Images
 <div align="center" display="flex" flex-direction="row">
 <a>
-    <img src="http://sardonyx.studio/img/😓🦁💀🥰😙💝🤩👾">
+    <img src="https://i.sardonyx.studio/😓🦁💀🥰😙💝🤩👾">
 </a>
 <a>
-    <img src="http://sardonyx.studio/img/💝😡🐼❤🙉😐🤒🥵">
+    <img src="https://i.sardonyx.studio/💝😡🐼❤🙉😐🤒🥵">
 </a>
 <a>
-    <img src="http://sardonyx.studio/img/😀🥳🤡😷🖤😎😫🙂">
+    <img src="https://i.sardonyx.studio/😀🥳🤡😷🖤😎😫🙂">
 </a>
 </div>
 
