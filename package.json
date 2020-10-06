@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "rcedit": "^2.2.0",
-    "electron": "^8.3.0",
+    "electron": "^8.5.2",
     "electron-builder": "^22.6.1",
     "electron-packager": "^14.2.1",
     "electron-winstaller": "^4.0.0",
