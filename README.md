@@ -16,19 +16,6 @@ Sick of making runes when everytime you play a different champion and don't want
 # Usage
 Just open your runes make your rune and give it a name. Press (+) button on the app. To load your runes press your profile picture in the app!
 
-# Images
-<div align="center" display="flex" flex-direction="row">
-<a>
-    <img src="https://i.sardonyx.studio/😓🦁💀🥰😙💝🤩👾">
-</a>
-<a>
-    <img src="https://i.sardonyx.studio/💝😡🐼❤🙉😐🤒🥵">
-</a>
-<a>
-    <img src="https://i.sardonyx.studio/😀🥳🤡😷🖤😎😫🙂">
-</a>
-</div>
-
 # Contact Me
 
 You can open an issue here or send me a message.<br>
