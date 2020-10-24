@@ -1,7 +1,7 @@
 {
   "name": "rpp",
   "productName": "Runes++",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rune editor tool for league",
   "main": "dist/index.js",
   "scripts": {
@@ -10,6 +10,32 @@
     "compile": "tsc && node postcompile.js",
     "electron": "electron .",
     "wininstaller": "node wininstaller.js"
+  },
+  "build": {
+    "appId": "com.electron.${name}",
+    "productName": "Runes++",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "logo/Icon.ico",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "Sardonyx78",
+          "token": "${{ secrets.TOKEN }}"
+        }
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "logo/Icon.ico",
+      "publish": [
+        {
+          "provider": "github",
+          "owner": "Sardonyx78",
+          "token": "${{ secrets.TOKEN }}"
+        }
+      ]
+    }
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",

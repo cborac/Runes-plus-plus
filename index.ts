@@ -1,6 +1,6 @@
 import { app, BrowserWindow, ipcMain, dialog, shell, App } from "electron"
 import { exec } from 'child_process'
-import { existsSync, mkdirSync, writeFileSync, readFileSync } from 'fs'
+import { existsSync, writeFileSync, readFileSync } from 'fs'
 import https from "https"
 
 
@@ -26,7 +26,7 @@ async function fetch(url: string): Promise<any> {
     })
 }
 
-const currentVer = "v1.0.0"
+const currentVer = "v1.0.1"
 
 
 let authInf: auth = null
@@ -37,20 +37,22 @@ type auth = {
 }
 
 async function isProcessRunning(processName: string): Promise<boolean> {
-    const cmd = (() => {
-        switch (process.platform) {
-            case 'win32': return `tasklist`
-            case 'darwin': return `ps -ax | grep ${processName}`
-            case 'linux': return `ps -A`
-        }
-    })()
-
     return new Promise((resolve, reject) => {
-        exec(cmd, async (err: Error, stdout: string, stderr: string) => {
-            if (err) reject(err)
-
-            resolve(stdout.split(processName).length !== 1 && !!((await getAuth()).token))
-        })
+        switch (process.platform) {
+            case 'win32':
+                exec('tasklist', async (err: Error, stdout: string, stderr: string) => {
+                if (err) reject(err)
+    
+                resolve(stdout.split(processName).length !== 1 && !!((await getAuth()).token))
+                })
+            break;
+            case 'darwin': 
+            exec('ps -ax | grep LeagueClientUx', async (err: Error, stdout: string, stderr: string) => {
+                if (err) reject(err)
+    
+                resolve(stdout.split('riotclient-app').length !== 1 && !!((await getAuth()).token))
+            })
+        }
     })
 };
 
@@ -61,7 +63,7 @@ ipcMain.on("first", async event => {
 
 
 
-function getAuth(): Promise<auth> {
+async function getAuth(): Promise<auth> {
     return new Promise((res, rej) => {
         exec((process.platform === "win32") ? "wmic PROCESS WHERE name='LeagueClientUx.exe' GET commandline" : "ps -A | grep LeagueClientUx", (err, out) => {
             res({
@@ -166,7 +168,7 @@ app.on("ready", async () => {
         width: 400,
         height: 600,
         fullscreenable: false,
-        frame: (process.platform !== "win32"),
+        frame: /*(process.platform !== "win32")*/ true,
         icon: "logo/Icon.ico",
         resizable: false,
         title: "Runes++",
@@ -188,7 +190,7 @@ app.on("ready", async () => {
 
         if (file.ignoreUpdate) return
 
-        if (r.name !== currentVer) dialog.showMessageBox(win, {
+        if (r.tag_name !== currentVer) dialog.showMessageBox(win, {
             type: 'warning',
             buttons: ['Yes', 'No'],
             defaultId: 2,
