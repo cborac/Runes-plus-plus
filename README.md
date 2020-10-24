@@ -19,19 +19,6 @@ Relases can be found on the (releases page)[https://github.com/Sardonyx78/Runes-
 # Usage
 Just open your rune, make your rune and give it a name. Press (+) button on the app. To load your runes press your profile picture in the app!
 
-# Images
-<div align="center" display="flex" flex-direction="row">
-<a>
-    <img src="https://i.sardonyx.studio/😓🦁💀🥰😙💝🤩👾">
-</a>
-<a>
-    <img src="https://i.sardonyx.studio/💝😡🐼❤🙉😐🤒🥵">
-</a>
-<a>
-    <img src="https://i.sardonyx.studio/😀🥳🤡😷🖤😎😫🙂">
-</a>
-</div>
-
 # Contact Me
 
 You can open an issue here or send me a message.<br>
