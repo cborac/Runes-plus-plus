@@ -7,7 +7,7 @@
 Sick of making runes when everytime you play a different champion and don't want to buy extra rune pages? Then use Runes++ a simple tool for saving your runes.
 
 # Install
-Relases can be found on the (releases page)[https://github.com/Sardonyx78/Runes-plus-plus/releases].
+Relases can be found on the [releases page](https://github.com/Sardonyx78/Runes-plus-plus/releases).
 
 ## Support
 - [x] Windows x64
