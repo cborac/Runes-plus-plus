@@ -1,3 +1,5 @@
+# DISCONTINUED: It no longer works and it isn't being maintained
+
 <div align="center" display="flex" flex-direction="column">
     <a><image src="https://github.com/Sardonyx78/Runes-plus-plus/blob/master/logo/Icon.png" width="200"></a>
     <br />
